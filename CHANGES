@@ -1,0 +1,7 @@
+16/10/03
+
+There was a bug in SCSI::linux::enumerate() where it used stat() instead of
+lstat() to check if a file in /dev was a SCSI generic device. This meant
+that in some cases, symlinks to devices would show up rather than the
+devices themselves.
+
