@@ -1,4 +1,14 @@
-16/10/03
+2004-07-15 - 1.003
+
+CPAN-ification of an old module
+
+* Packaging changed from Debian-style to CPAN style (use dh-make-perl
+  if you want a Debian package)
+* Namespace changed from SCSI to Device::SCSI to fit CPAN conventions
+* Modules are now actually versioned
+* A simple test added to make CPAN testers happy
+
+2003-10-16 - Pre-CPAN
 
 There was a bug in SCSI::linux::enumerate() where it used stat() instead of
 lstat() to check if a file in /dev was a SCSI generic device. This meant

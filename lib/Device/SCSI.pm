@@ -1,9 +1,9 @@
 package Device::SCSI;
 require 5.005;
 use strict;
-use vars qw( $ID $VERSION @ISA );
-
-$ID=' $Id: SCSI.pm,v 1.1 2001/06/23 01:31:24 abuse Exp $ ';
+use vars qw( $VERSION @ISA );
+# $Id: SCSI.pm,v 1.1 2004/07/15 09:22:22 abuse Exp $
+$VERSION = do { my @r=(q$Revision: 1.1 $=~/\d+/g); sprintf "%d."."%03d"x$#r,@r };
 
 use Carp;
 

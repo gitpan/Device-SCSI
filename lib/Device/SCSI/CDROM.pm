@@ -2,9 +2,9 @@ package Device::SCSI::CDROM;
 require 5.005;
 use base Device::SCSI;
 use strict;
-use vars qw( $ID );
-
-$ID=' $Id: CDROM.pm,v 1.1 2001/06/23 01:31:28 abuse Exp $ ';
+use vars qw( $VERSION );
+# $Id: CDROM.pm,v 1.1 2004/07/15 09:22:23 abuse Exp $
+$VERSION = do { my @r=(q$Revision: 1.1 $=~/\d+/g); sprintf "%d."."%03d"x$#r,@r };
 
 use Carp;
 

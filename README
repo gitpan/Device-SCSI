@@ -1,6 +1,6 @@
 SCSI.pm
 
-$Id$
+$Id: README,v 1.1 2004/07/15 09:22:19 abuse Exp $
 
 ABSTRACT
 ========
@@ -25,7 +25,7 @@ e) make install
 USAGE
 =====
 
-See "perldoc SCSI".
+See "perldoc Device::SCSI".
 
 COPYRIGHT
 =========

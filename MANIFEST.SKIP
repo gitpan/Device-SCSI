@@ -1,0 +1,5 @@
+^CVS/
+/CVS/
+^Makefile$
+^Makefile.old$
+.tar.gz$
