@@ -11,8 +11,8 @@ use IO::File;
 
 use lib 'lib';
 
-use SCSI;
-use SCSI::CDROM;
+use Device::SCSI;
+use Device::SCSI::CDROM;
 
 =head1 NAME
 
@@ -170,7 +170,7 @@ my $result=GetOptions(
 usage if($help or !$result);
 
 if($version) {
-#  foreach(($ID, $SCSI::ID $SCSI::CDROM::ID)) {
+#  foreach(($ID, $Device::SCSI::ID $Device::SCSI::CDROM::ID)) {
 #    print "$_\n";
 #  }
   print STDERR "$_\n";
@@ -179,8 +179,8 @@ if($version) {
 
 # Open all the SCSI CD-ROM devices
 my %devices;
-foreach (SCSI->enumerate) {
-  my $device=new SCSI::CDROM $_;
+foreach (Device::SCSI->enumerate) {
+  my $device=new Device::SCSI::CDROM $_;
   next unless defined $device;
   $devices{$_}=$device;
   my $inq=$device->inquiry;

@@ -16,7 +16,7 @@ BEGIN {
   if ($@) {
     croak "There doesn't seem to be a (working) SCSI driver for \"$^O\":\n$@";
   }
-  eval "use base 'SCSI::$^O'";
+  eval "use base 'Device::SCSI::$^O'";
   croak $@ if $@;
 }
 

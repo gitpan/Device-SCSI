@@ -1,6 +1,6 @@
 package Device::SCSI::CDROM;
 require 5.005;
-use base SCSI;
+use base Device::SCSI;
 use strict;
 use vars qw( $ID );
 

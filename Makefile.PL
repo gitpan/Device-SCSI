@@ -5,5 +5,5 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
 	      NAME     => 'Device::SCSI',
-	      VERSION  => '1.001'
+	      VERSION  => '1.002'
 	     );
